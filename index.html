@@ -1,0 +1,162 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+  <meta charset="UTF-8" />
+  <meta name="viewport" content="width=device-width, initial-scale=1.0" />
+  <meta name="description" content="A futuristic 3D-style sci-fi portfolio with scroll-driven video sections." />
+  <title>Mohit Kumar | Futuristic Portfolio</title>
+  <link rel="preconnect" href="https://fonts.googleapis.com">
+  <link rel="preconnect" href="https://fonts.gstatic.com" crossorigin>
+  <link href="https://fonts.googleapis.com/css2?family=Orbitron:wght@500;700;900&family=Poppins:wght@300;400;500;600&display=swap" rel="stylesheet">
+  <link rel="stylesheet" href="style.css" />
+</head>
+<body>
+  <div class="loader" id="loader">
+    <div class="loader-ring"></div>
+    <p>Loading Neural Interface...</p>
+  </div>
+
+  <div class="cursor-dot" id="cursorDot" aria-hidden="true"></div>
+  <div class="noise" aria-hidden="true"></div>
+  <canvas id="stars" aria-hidden="true"></canvas>
+
+  <header class="site-header">
+    <a href="#hero" class="brand"><span><b>Mohit </b>
+    </span> Portfolio</a>
+    <button class="menu-toggle" id="menuToggle" aria-label="Open menu">Menu</button>
+    <nav class="nav" id="nav">
+      <a href="#hero">Hero</a>
+      <a href="#about">About</a>
+      <a href="#projects">Projects</a>
+      <a href="#skills">Skills</a>
+      <a href="#contact">Contact</a>
+    </nav>
+  </header>
+
+  <main>
+    <section class="video-section hero" id="hero" data-video="0">
+      <video class="bg-video" muted playsinline preload="metadata">
+        <source src="Videos/1.mp4" type="video/mp4" />
+      </video>
+      <div class="section-overlay"></div>
+      <div class="scanline"></div>
+      <div class="content hero-content reveal">
+        <p class="eyebrow">Futuristic | Interactive | Portfolio</p>
+        <h1> <i>Mohit Kumar </i></h1>
+        <p class="hero-text">B.Tech student at MMMUT building futuristic web experiences with scroll-controlled video, neon glass UI, and smooth motion.</p>
+        <div class="hero-actions">
+          <a href="#projects" class="btn primary">View Projects</a>
+          <a href="#contact" class="btn ghost">Contact Me</a>
+        </div>
+        <div class="hero-stats">
+          <div><strong>30FPS</strong><span>Motion Goal</span></div>
+          <div><strong>3D</strong><span>Video Illusion</span></div>
+          <div><strong>100%</strong><span>Responsive</span></div>
+        </div>
+      </div>
+      <div class="scroll-hint">Scroll to Explore</div>
+    </section>
+
+    <section class="video-section" id="about" data-video="1">
+      <video class="bg-video" muted playsinline preload="metadata">
+        <source src="Videos/2.mp4" type="video/mp4" />
+      </video>
+      <div class="section-overlay"></div>
+      <div class="content grid-content reveal">
+        <div>
+          <p class="eyebrow">About</p>
+          <h2>Mohit Kumar</h2>
+          <p>I am Mohit Kumar, a B.Tech student at MMMUT. This portfolio is designed to feel like a futuristic 3D world, but the effect is created using background videos controlled by scroll. When the user scrolls down, the video moves forward; when the user scrolls up, the video moves backward.</p>
+        </div>
+        <div class="holo-card profile-card tilt-card">
+          <div class="avatar-orb">DEV</div>
+          <h3>Mohit Kumar</h3>
+          <p>B.Tech Student, MMMUT</p>
+          <ul>
+            <li>HTML, CSS, JavaScript</li>
+            <li>React-ready architecture</li>
+            <li>Scroll-controlled video experience</li>
+          </ul>
+        </div>
+      </div>
+    </section>
+
+    <section class="content-section" id="projects">
+      <div class="content reveal">
+        <p class="eyebrow">Projects</p>
+        <h2>Featured Missions</h2>
+        <div class="project-grid">
+          <article class="project-card tilt-card">
+            <span class="project-number">01</span>
+            <h3>StudyVault</h3>
+            <p>A resource sharing platform for academic notes, uploads, search, filters, and dashboards.</p>
+            <div class="tags"><span>HTML</span><span>CSS</span><span>JS</span></div>
+            <a href="#" aria-label="Open StudyVault project">View Case Study -></a>
+          </article>
+          <article class="project-card tilt-card">
+            <span class="project-number">02</span>
+            <h3>AI City Visualizer</h3>
+            <p>A cinematic landing page using video-driven movement and futuristic sci-fi UI cards.</p>
+            <div class="tags"><span>Video</span><span>Motion</span><span>UI</span></div>
+            <a href="#" aria-label="Open AI City project">View Case Study -></a>
+          </article>
+          <article class="project-card tilt-card">
+            <span class="project-number">03</span>
+            <h3>Portfolio OS</h3>
+            <p>A personal brand website with smooth navigation, contact form, and animated skill modules.</p>
+            <div class="tags"><span>Portfolio</span><span>Responsive</span><span>SEO</span></div>
+            <a href="#" aria-label="Open Portfolio OS project">View Case Study -></a>
+          </article>
+        </div>
+      </div>
+    </section>
+
+    <section class="video-section" id="skills" data-video="2">
+      <video class="bg-video" muted playsinline preload="metadata">
+        <source src="Videos/3.mp4" type="video/mp4" />
+      </video>
+      <div class="section-overlay"></div>
+      <div class="content reveal">
+        <p class="eyebrow">Skills</p>
+        <h2>Technical Arsenal</h2>
+        <div class="skills-grid">
+          <div class="skill"><span>HTML</span><div><i style="--w:95%"></i></div></div>
+          <div class="skill"><span>CSS</span><div><i style="--w:92%"></i></div></div>
+          <div class="skill"><span>JavaScript</span><div><i style="--w:85%"></i></div></div>
+          <div class="skill"><span>React</span><div><i style="--w:78%"></i></div></div>
+          <div class="skill"><span>GitHub</span><div><i style="--w:88%"></i></div></div>
+          <div class="skill"><span>UI Animation</span><div><i style="--w:82%"></i></div></div>
+        </div>
+      </div>
+    </section>
+
+    <section class="content-section contact" id="contact">
+      <div class="content grid-content reveal">
+        <div>
+          <p class="eyebrow">Contact</p>
+          <h2>Ready to launch a new mission?</h2>
+          <p>Use this section for recruiter, client, or collaboration messages. Replace the links with your real GitHub, LinkedIn, and email.</p>
+          <div class="social-links">
+            <a href="#">GitHub</a>
+            <a href="#">LinkedIn</a>
+            <a href="mailto:you@example.com">Email</a>
+          </div>
+        </div>
+        <form class="contact-form" id="contactForm">
+          <label>Name<input type="text" name="name" required placeholder="Your name"></label>
+          <label>Email<input type="email" name="email" required placeholder="you@example.com"></label>
+          <label>Message<textarea name="message" required placeholder="Tell me about your project"></textarea></label>
+          <button class="btn primary" type="submit">Send Signal</button>
+          <p class="form-status" id="formStatus"></p>
+        </form>
+      </div>
+    </section>
+  </main>
+
+  <footer>
+    <p>Copyright 2026 Mohit Kumar. Built with HTML, CSS and JavaScript.</p>
+  </footer>
+
+  <script src="script.js"></script>
+</body>
+</html>
